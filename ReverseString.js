@@ -1,3 +1,4 @@
+//* Problem :
 //* Given a string, return a new string with the reversed
 //? Example : Indonesia => aisenodnI
 
@@ -9,7 +10,7 @@
 //? Algorithm
 //* 1. Convert string to an array with split('') 
 //* 2. Reverse array with javascript built in function reverse()
-//* 3. Convert that array reversed to string back with join() 
+//* 3. Convert that array reversed to string back with join('') 
 //* 4. Return that string
 
 {
@@ -86,11 +87,11 @@ console.log('Solution2: Indonesia ToBe ' + reverseTwo('Indonesia'))
         //* 2nd reduce => prevChar = 'I', currChar = 'n' => currChar + prevChar = 'nI'
         //* 3nd reduce => prevChar = 'nI', currChar = 'd' => currChar + prevChar = 'dnI'
         //* 4th reduce => prevChar = 'dnI', currChar = 'o' => currChar + prevChar = 'odnI'
-        //* 2nd reduce => prevChar = 'odnI', currChar = 'n' => currChar + prevChar = 'nodnI'
-        //* 2nd reduce => prevChar = 'nodnnI', currChar = 'e' => currChar + prevChar = 'enodnI
-        //* 2nd reduce => prevChar = 'enodnnI', currChar = 's => currChar + prevChar = 'senodnI
-        //* 2nd reduce => prevChar = 'senodnnI', currChar = 'i' => currChar + prevChar = 'isenodnI
-        //* 2nd reduce => prevChar = 'isenodnnI', currChar = n => currChar + prevChar = 'aisenodnI
+        //* 5th reduce => prevChar = 'odnI', currChar = 'n' => currChar + prevChar = 'nodnI'
+        //* 6th reduce => prevChar = 'nodnnI', currChar = 'e' => currChar + prevChar = 'enodnI
+        //* 7th reduce => prevChar = 'enodnnI', currChar = 's => currChar + prevChar = 'senodnI
+        //* 8th reduce => prevChar = 'senodnnI', currChar = 'i' => currChar + prevChar = 'isenodnI
+        //* 9th reduce => prevChar = 'isenodnnI', currChar = 'a' => currChar + prevChar = 'aisenodnI
 
     }
     
